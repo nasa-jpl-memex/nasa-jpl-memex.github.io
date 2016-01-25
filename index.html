@@ -1,365 +1,711 @@
-
 <!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
+<html lang="en">
 
 <head>
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>JPL DARPA Memex</title>    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <!-- Stylesheet -->
-    <link href="static/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link href="static/css/main.css" rel="stylesheet">
-    
-    <!-- Favicon and Touch Icons -->
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-57-precomposed.png">
+    <title>MEMEX</title>
 
-    <script src="static/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+<body id="page-top" class="index" style="font-family: verdana">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-            <div class="navbar-header" style="min-width: 280px">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top">
-                    <a href="http://www.jpl.nasa.gov/" target="_blank"><img src="static/img/JPL_Logo.png" style="height: 50px;"></a>
-                    <a href="http://www.darpa.mil/" target="_blank"><img src="static/img/DARPA.png" style="height: 50px;"></a>
-                </a>
+                <a class="navbar-brand page-scroll" href="index.html#page-top">MEMEX</a>
             </div>
 
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="page-scroll">
-                        <a href="#page-top">Home</a>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="index.html#page-top"></a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
+                    <li>
+                        <a class="page-scroll" href="index.html#about">About</a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#projects">Projects</a>
+                    <li>
+                        <a class="page-scroll" href="index.html#how-it-works">How It Works</a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#software">Software</a>
+                    <li>
+                        <a class="page-scroll" href="index.html#it-helps">How It Helps</a>
                     </li>
-                     <li class="page-scroll">
-                        <a href="#team">Team</a>
+                    <li>
+                        <a class="page-scroll" href="index.html#news">News</a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
+                    <li>
+                        <a class="page-scroll" href="index.html#team">Team</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html#contact">Contact</a>
                     </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
+        <!-- /.container-fluid -->
     </nav>
 
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-heading">We search <span class="dark-side">THE dark side</span> of web</div>
+            </div>
+        </div>
+    </header>
 
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">WHAT IS MEMEX?</h2>
+                    <hr/>
+                </div>
+            </div>
+            <div class="row">
+               <strong><p class="text-center about-memex-content">Today's web searches use a centralized, one-size-fits-all approach that searches the Internet with the same set of tools for all queries. While that model has been wildly successful commercially, it does not work well for many government use cases. To help overcome these challenges, DARPA launched the Memex program in September 2014.</strong> </p>
+                <div class="col-md-6">
+                    <p class="text-justify about-memex-content" style="margin-top:50px">
+                        Memex seeks to develop software that advances online search capabilities far beyond the current state of the art. The goal is to invent better methods for interacting with and sharing information, so users can quickly and thoroughly organize and search subsets of information relevant to their individual interests.
+Creation of a new domain-specific indexing and search paradigm will provide mechanisms for improved content discovery, information extraction, information retrieval, user collaboration and extension of
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <p class="text-justify about-memex-content" style="margin-top:50px">
+                        current search capabilities to the deep web,the dark web, and nontraditional (e.g. multimedia) content.
+DARPA is funding 17 teams to collaboratively develop software to solve this challenge. NASA JPL, Kitware, and Continnum are working in collaboration to develop and improve the Memex search technology. Currently, the team is using the software to address complex search problems including human trafficking, court documents, and research papers.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <section class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Memex</h1>
-                        <!--<p class="intro-text">one line info</p>-->
-                        <div class="page-scroll">
-                            <a href="#about">
-                                <img src="static/img/down_arrow.png" style="width: 10%; opacity: 0.2;">
-                                <!--<i class="fa fa-angle-double-down animated"></i>-->
-                            </a>
+    <section id="how-it-works">
+
+        <div class="container-fluid text-center">
+            <h2 class="section-heading">WHAT TO LOOK FOR <br/>IN MEMEX</h2>
+        </div>
+
+        <div class="container-fluid" id="tools">
+
+        </div>
+
+        <div class="container-fluid visible-sm visible-xs">
+
+            <div class="col-md-12">
+                <p class="tool-content col-md-offset-4 col-md-7"><strong>Memex Explorer</strong> is a pluggable framework for domain specific crawls, search, and unified interface for Memex Tools. It includes the capability to add links to other web-based apps.</p>
+            </div>
+            <div class="col-md-12">
+                <p class="tool-content col-md-offset-4 col-md-7"><strong>ImageCat</strong> analyses images and extracts their EXIF metadata and any text contained in the image via OCR. It can handle tens of millions of images.</p>
+            </div>
+            <div class="col-md-12">
+                <p class="tool-content col-md-offset-6 col-md-5"><strong>LegisGATE</strong> is an application for running General Architecture Text Engineering over legislative resources.</p>
+            </div>
+            <div class="col-md-12">
+                <p class="tool-content col-md-offset-5 col-md-6"><strong>FacetSpace</strong> allows the investigation of large data sets based on the extraction and manipulation of relevant facets.</p>
+            </div>
+            <div class="col-md-12">
+                <p class="tool-content col-md-offset-5 col-md-6"><strong>ImageSpace</strong> provides the ability to analyze and search through large numbers of images based on associated metadata and OCR text or by uploading an image.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="it-helps">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">HOW IT HELPS</h2>
+                    <hr/>
+                     <strong><p class="text-center about-memex-content" style="margin-bottom:50px">These are the domains that we are actively working in with Memex.</strong></p>
+                </div>
+            </div>
+            <div class="row text-center" style="margin-bottom:50px">
+                <div class="col-md-offset-1 col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-shield fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">GeoInformatics in Human Trafficking</h4>
+                    <p class="text-muted">Collects data and information around victims of human trafficking with geospatial informatics capabilities</p>
+                </div>
+                <div class="col-md-offset-2 col-md-4 text-center">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-users fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">CTCEU Facial Recognition</h4>
+                    <p class="text-muted">Manages photos of potential terrorists and finds other places they exist on the web</p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-offset-1 col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-file-text-o fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Material Research</h4>
+                    <p class="text-muted">Collect and analyzes data from research papers to create shared knowledge around an issue or topic</p>
+                </div>
+                <div class="col-md-offset-2 col-md-4 text-center">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-gavel fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Court Citations</h4>
+                    <p class="text-muted">Crawls the web for court documents to help identify human traffickers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <section id="news" class="bg-light-gray">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">IN THE NEWS</h2>
+                    <hr/>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="http://bit.ly/1MgD9qD" target="_blank" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-external-link fa-3x"></i>
+                            </div>
                         </div>
+                        <img src="img/news/img8.png" class="img-responsive" alt="">
+                    </a>
+                     <div class="portfolio-caption">
+                        <a href="http://bit.ly/1MgD9qD" target="_blank"><h4>Finding a Better Way to Search the Whole Internet. </h4></a>
+                        <p class="text-muted">NBC Los Angeles Channel 4. July 8, 2015</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="http://goo.gl/au6CfL" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-external-link fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/news/img7.png" class="img-responsive" alt="">
+                    </a>
+                     <div class="portfolio-caption">
+                        <a href="http://goo.gl/au6CfL" target="_blank"><h4>DARPA is Creating a New Internet, Based Around Search. </h4></a>
+                        <p class="text-muted">The Epoch Times. June 23, 2015. </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="http://www.tovima.gr/science/article/?aid=712905" target="_blank" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-external-link fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/news/img2.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                       <a href="http://www.tovima.gr/science/article/?aid=712905" target="_blank"><h4>Memex: the lens of the Dark Web.</h4></a>
+                        <p class="text-muted">Tovima (Greece) Science. June 14, 2015</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="http://goo.gl/jXai2l
+                    " target="_blank" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-external-link fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/news/img9.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                       <a href="http://goo.gl/jXai2l
+                       "><h4>NASA is indexing the Deep Web to show mankind what Google wont. </h4></a>
+                        <p class="text-muted">ABC/Univision Fusion. June 10, 2015.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href=" http://spaceref.com/news/viewpr.html?pid=46065" target="_blank" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-external-link fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/news/img5.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                       <a href=" http://spaceref.com/news/viewpr.html?pid=46065" target="_blank"><h4>Deep Web Search May Help Scientists.</h4></a>
+                        <p class="text-muted">SpaceRef. June 10, 2015</p>
+                    </div>
+                </div>
+                 <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="http://openscienceworld.com/deep-web-search-may-help-scientists/" target="_blank" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-external-link fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/news/img3.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <a href="http://openscienceworld.com/deep-web-search-may-help-scientists/" target="_blank"><h4>Deep Web Search May Help Scientists</h4></a>
+                        <p class="text-muted">Open Science World. May 28, 2015</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="http://www.theregister.co.uk/2015/05/27/jpl_joins_darpas_memex_project/" target="_blank" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-external-link fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/news/img6.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                       <a href="http://www.theregister.co.uk/2015/05/27/jpl_joins_darpas_memex_project/" target="_blank"><h4>JPL joins DARPA’s Memex project: Better search and indexing for space stuff.”</h4></a>
+                        <p class="text-muted">The Register - UK. May 27, 2015.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="http://www.sciencedaily.com/releases/2015/05/150523100942.htm" target="_blank" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-external-link fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/news/img10.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                       <a href="http://www.sciencedaily.com/releases/2015/05/150523100942.htm" target="_blank"><h4>Deep Web Search May Help Scientists</h4></a>
+                        <p class="text-muted">ScienceDaily. May 23, 2015</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="http://goo.gl/MjVuVo
+                    " target="_blank" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-external-link fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/news/img1.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                       <a href="http://goo.gl/MjVuVo
+                       " target="_blank"><h4>NASA, DARPA collaborating on Deep Web search to analyze spacecraft data.</h4></a>
+                        <p class="text-muted">Digi III. March 30, 2015</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-<div class="container-fluid">
-    <section id="about" class="about-section content-section text-center">
-        <!-- div class="about-section content-section text-center" -->
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>About</h2>
-                    <p>Memex seeks to develop the next generation of search technologies and revolutionize the discovery, organization and presentation of search results. The Memex program gets its name and inspiration from a hypothetical device described in “As We May Think,” a 1945 article for The Atlantic Monthly written by Vannevar Bush, director of the U.S. Office of Scientific Research and Development (OSRD) during World War II.</p>
-                    </br>
-                    <a href="http://www.darpa.mil/Our_Work/I2O/Programs/Memex.aspx" target="_blank">DARPA Memex portal</a>
+
+    <!-- Team Section -->
+    <section id="team">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">THE TEAM</h2>
+                    <hr/>
+                    <div class="row">
+                        <strong><p class="text-center about-memex-content col-md-offset-1 col-md-10">NASA JPL, Kitware and Continnum are working in collaboration to develop and improve the Memex search technology. Currently, the team is using the software to address complex search problems including human trafficking, court documents, and research papers.</strong></p>
+                    </div>
                 </div>
             </div>
-        <!-- /div -->
+
+            <div class="row" style="margin-top:70px">
+                <div class="col-md-offset-1 col-md-2 text-center">
+                    <img src="img/jpl-logo.png" alt="JPL logo" style="width:60%">
+                </div>
+                <div class="col-md-8">
+                    <p class="large text-muted">The Data Science Team at JPL coordinates research, development and operations of data intensive and data-driven science systems, methodologies and technologies across
+JPL Engineering, Science and Programs.</p>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-md-offset-1 col-md-2">
+                    <div class="team-member">
+                        <img src="img/team/chris-mattmann.jpg" class="img-responsive" alt="">
+                        <h4>DR. CHRIS MATTMANN</h4>
+                        <p class="text-muted">Principal Investigator</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="team-member">
+                        <img src="img/team/paul_r.jpg" class="img-responsive grayscale" alt="">
+                        <h4>PAUL RAMIREZ</h4>
+                        <p class="text-muted">Co- Investigator</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="team-member">
+                        <img src="img/team/wayne_burke.jpg" class="img-responsive grayscale" alt="">
+                        <h4>WAYNE BURKE</h4>
+                        <p class="text-muted">Data Scientist</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="team-member">
+                        <img src="img/team/brian_wilson.jpg" class="img-responsive grayscale" alt="">
+                        <h4>BRIAN WILSON</h4>
+                        <p class="text-muted">Principal Engineer, Architect</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="team-member">
+                        <img src="img/team/lewis_mc.jpg" class="img-responsive grayscale" alt="">
+                        <h4>DR. LEWIS MCGIBBNEY</h4>
+                        <p class="text-muted">Engineering Applications Software Engineer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-offset-1 col-md-2">
+                    <div class="team-member">
+                        <img src="img/team/mike_joyce.jpg" class="img-responsive grayscale" alt="">
+                        <h4>MICHAEL JOYCE</h4>
+                        <p class="text-muted">Scientific Applications Software Engineer</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="team-member">
+                        <img src="img/team/asitang_mishra.gif" class="img-responsive grayscale" alt="">
+                        <h4>ASITANG MISHRA</h4>
+                        <p class="text-muted">Nutch Intern</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="team-member">
+                        <img src="img/team/kim_whitehall.jpg" class="img-responsive grayscale" alt="">
+                        <h4>DR. KIM WHITEHALL</h4>
+                        <p class="text-muted">Scientific Application Software Engineer</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="team-member">
+                        <img src="img/team/maziyar_boustani.jpg" class="img-responsive grayscale" alt="">
+                        <h4>MAZIYAR BOUSTANI</h4>
+                        <p class="text-muted">Scientific Applications Software Engineer</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="team-member">
+                        <img src="img/team/shivika_thapar.jpg" class="img-responsive grayscale" alt="">
+                        <h4>SHIVIKA THAPAR</h4>
+                        <p class="text-muted">UX Design Intern</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-offset-1 col-md-2">
+                    <div class="team-member">
+                        <img src="img/team/nipurn_doshi.jpg" class="img-responsive grayscale" alt="">
+                        <h4>NIPURN DOSHI</h4>
+                        <p class="text-muted">UX Design Intern</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="team-member">
+                        <img src="img/team/sujen_shah.jpg" class="img-responsive grayscale" alt="">
+                        <h4>SUJEN SHAH</h4>
+                        <p class="text-muted">Nutch Intern</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="team-member">
+                        <img src="img/team/lauren_wong.png" class="img-responsive grayscale" alt="">
+                        <h4>LAUREN WONG</h4>
+                        <p class="text-muted">UX Designer</p>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="team-member">
+                        <img src="img/team/rob_tapella.jpg" class="img-responsive grayscale" alt="">
+                        <h4>ROB TAPELLA</h4>
+                        <p class="text-muted">UX Designer</p>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="team-member">
+                        <img src="img/team/karanjeet_singh.png" class="img-responsive grayscale" alt="">
+                        <h4>KARANJEET SINGH</h4>
+                        <p class="text-muted">Data Scientist Intern (USC)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-offset-1 col-md-2">
+                    <div class="team-member">
+                        <img src="img/team/Thamme_Gowda.png" class="img-responsive grayscale" alt="">
+                        <h4>THAMME GOWDA N.</h4>
+                        <p class="text-muted">Data Scientist Intern (USC)</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="team-member">
+                        <img src="img/team/Harshavardhan_Manjunatha.jpg" class="img-responsive grayscale" alt="">
+                        <h4>HARSHAVARDHAN MANJUNATHA</h4>
+                        <p class="text-muted">Data Scientist Intern (USC)</p>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="team-member">
+                        <img src="img/team/Madhav_Sharan.png" class="img-responsive grayscale" alt="">
+                        <h4>MADHAV SHARAN</h4>
+                        <p class="text-muted">Data Scientist Intern (USC)</p>
+                    </div>
+                </div>
+              </div>
+
+            <div class="row" style="margin-top:3%">
+               <div class="col-md-offset-1 col-md-2 text-center">
+                    <img src="img/continuum-logo.png" alt="JPL logo" style="width:60%">
+                </div>
+                <div class="col-md-8">
+                    <p class="large text-muted">Continuum Analytics provides tools for large-scale data-analysis and visualization that allow domain experts to understand and interact with data where it is produced instead of moving it around. Continuum brings fast, efficient code to data and bring results back to the user.
+</p>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-md-offset-1 col-md-2">
+                    <div class="team-member">
+                        <img src="img/team/katrina_riehl.jpg" class="img-responsive grayscale" alt="">
+                        <h4>DR. KATRINA RIEHL</h4>
+                        <p class="text-muted">Co- Principal Investigator</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="team-member">
+                        <img src="img/team/brittain_hard.png" class="img-responsive grayscale" alt="">
+                        <h4>BRITTAIN HARD</h4>
+                        <p class="text-muted">Software Developer</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="team-member">
+                        <img src="img/team/michael_sarahan.jpg" class="img-responsive grayscale" alt="">
+                        <h4>DR. MICHAEL SARAHAN</h4>
+                        <p class="text-muted">Data Scientist</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="team-member">
+                        <img src="img/team/reed_youngblood.jpg" class="img-responsive grayscale" alt="">
+                        <h4>REED YOUNGBLOOD</h4>
+                        <p class="text-muted">Data Scientist</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="team-member">
+                        <img src="img/team/fde_freitas.png" class="img-responsive grayscale" alt="">
+                        <h4>DR. GUILHERME DE FREITAS</h4>
+                        <p class="text-muted">Data Scientist</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-offset-1 col-md-2 text-center">
+                    <img src="img/kitware-logo.png" alt="JPL logo" style="width:80%">
+                </div>
+                <div class="col-md-8">
+                    <p class="large text-muted">Kitware, Inc. is a technology company that specializes in the research and development of open-source software in the fields of computer vision, medical imaging, visualization,
+3D data publishing and technical software development.</p>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-md-offset-1 col-md-2">
+                    <div class="team-member">
+                        <img src="img/team/jeffrey_baumes.jpg" class="img-responsive grayscale" alt="">
+                        <h4>DR. JEFFREY BAUMES</h4>
+                        <p class="text-muted">Site Principal Investigator</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="team-member">
+                        <img src="img/team/matt_turek.png" class="img-responsive grayscale" alt="">
+                        <h4>DR. MATTHEW TUREK</h4>
+                        <p class="text-muted">Assistant Director of Computer Vision</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="team-member">
+                        <img src="img/team/paul_tunison.png" class="img-responsive grayscale" alt="">
+                        <h4>PAUL TUNISON</h4>
+                        <p class="text-muted">Computer Vision R&D Engineer</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="team-member">
+                        <img src="img/team/aashish_chaudhary.png" class="img-responsive grayscale" alt="">
+                        <h4>AASHISH CHAUDHARY</h4>
+                        <p class="text-muted">Technical Lead</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="team-member">
+                        <img src="img/team/harry_sun.png" class="img-responsive grayscale" alt="">
+                        <h4>DR. ZHAOHUI SUN</h4>
+                        <p class="text-muted">Computer Vision R&D Engineer</p>
+                    </div>
+                </div>
+                <div class="col-md-offset-1 col-md-2">
+                    <div class="team-member">
+                        <img src="img/team/dan_lamanna.png" class="img-responsive grayscale" alt="">
+                        <h4>DAN LAMANNA</h4>
+                        <p class="text-muted">Scientific Computing R&D Engineer</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
 
+    <section id="collaborators" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">COLLABORATORS</h2>
+                    <hr/>
+                </div>
 
-    <section id="projects" class="container content-section text-center">
-        <div class="row">
-        	<div class="col-md-12">
-            <h2>Domain Issues</h2>
-	    <p>These are the domain specific problems and challenges that we are working on.</p>
-	    	</div>
-        </div>
+                <div class="collaborators">
+                <a target="_blank" href="http://dig.isi.edu">
 
-        <div class="row">
-             <div class="col-md-4">
-		<i class="fa fa-gavel fa-3x btn-circle"></i>
-                <h3>Court Citations</h3>
-		<p>Collect and analyze court documents to help identify human traffickers.</p>
-            </div>
+                     <div class="col-md-12 collaborators">
+                       <img src="img/dig.png" class="img-responsive" alt="">
 
-            <div class="col-md-4">
-                <i class="fa fa-book fa-3x btn-circle"></i>
-                 <h3>Materials Research</h3>
-                <p>Collect and analyze data from research papers published in the materials domain.</p>
-            </div>
+                        <h3>Domain-specific Insight Graphs</h3>
+                        <h4> Information Sciences Institute </h4>
+                        <h4>University of Southern California </h4>
+                    </div>
+                </a>
+              </div>
+                <br/>
 
-            <div class="col-md-4">
-                <i class="fa fa-globe fa-3x btn-circle"></i>
-                <h3>GeoInformatics in Human Trafficking</h3>
-                <p>Bring geospatial informatics capabilities to the analysis of previously collected human trafficking data.</p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-offset-4 col-md-4">
-                <i class="fa fa-user fa-3x btn-circle"></i>
-                <h3>CTCEU Facial Recognition</h3>
-                <p>Starting with a list of photos of potential terrorists, find them other places on the web.</p>
             </div>
         </div>
     </section>
 
-    <section id="software" class="container content-section text-center">
-        <div class="row">
-        	<div class="col-md-12">
-            <h2>Software</h2>
-            <p>These are software components developed specifically for the Memex program.</p>
+    <section id="contact" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                 <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">CONTACT US</h2>
+
+                </div>
+                 <div class="col-lg-12 text-center">
+                     <h4 class="section-heading"><a href="mailto:memex-general@jpl.nasa.gov" >memex-general@jpl.nasa.gov</a></h4>
+                </div>
             </div>
         </div>
+    <!-- Clients Aside -->
+    <aside class="clients" style="background:rgba(255,255,255,0.4);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-1 col-md-2 col-sm-6">
+                    <a href="http://www.darpa.mil/">
+                        <img src="img/darpa-logo.png" class="img-responsive img-centered grayscale" alt="" style="width:70%">
+                    </a>
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <a href="http://www.jpl.nasa.gov/">
+                        <img src="img/jpl-logo.png" class="img-responsive img-centered grayscale" alt="" style="margin-top:40%; width:70%">
+                    </a>
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <a href="http://continuum.io/">
+                        <img src="img/continuum-logo.png" class="img-responsive img-centered grayscale" alt="" style="margin-top:40%; width:100%">
+                    </a>
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <a href="http://www.kitware.com/">
+                        <img src="img/kitware-logo.png" class="img-responsive img-centered grayscale" alt="">
+                    </a>
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <a href="index.html#">
+                        <img src="img/nasa-logo.png" class="img-responsive img-centered grayscale" alt="" style="width:70%">
+                    </a>
+                </div>
 
-        <div class="row">
-            <div class="col-md-4">
-                <i class="fa fa-code fa-3x btn-circle"></i>
-                <h3><a href="https://github.com/memex-explorer/memex-explorer">Memex Explorer</a></h3>
-		<p>Memex Explorer provides a unified interface for use of Memex Tools. It includes the capability to add links to other web-based apps (not just Memex) and the capability to start, stop, and analyze web crawls using 2 different crawlers - ACHE and Nutch.</p>
-            </div>
-            <div class="col-md-4">
-                <i class="fa fa-code fa-3x btn-circle"></i>
-                <h3><a href="https://github.com/memex-explorer/image_space">ImageSpace</a></h3>
-                <p>ImageSpace provides the ability to analyze and search through large numbers of images. These images may be text searched based on associated metadata and OCR text or a new image may be uploaded as a foundation for a search.</p>
-            </div>
-            <div class="col-md-4">
-                <i class="fa fa-code fa-3x btn-circle"></i>
-                <h3><a href="https://github.com/chrismattmann/imagecat">ImageCat</a></h3>
-                <p>ImageCat analyses images and extracts their EXIF metadata and any text contained in the image via OCR. It can handle millions of images.</p>
-            </div>
-         </div>
 
-        <div class="row">
-            <div class="col-md-offset-4 col-md-4">
-                <i class="fa fa-code fa-3x btn-circle"></i>
-                <h3><a href="https://github.com/lewismc/legisgate">LegisGATE</a></h3>
-		<p>Demonstration application for running General Architecture Text Engineering over legislative resources such as district court appeals.</p>
             </div>
-            <div class="col-md-4">
-	</div>
-
-
+        </div>
+    </aside>
     </section>
 
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-    <section id="team" class="container content-section text-center">
-        <div class="row">
-            <div class="col-md-12">
-                <h2>Team</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 col-sm-12 team-item">
-                <img class="img-responsive" src="static/img/jeffrey_baumes.jpg" alt="Team 1" style="cursor: pointer; border-radius:30em;">
-                <h3>Dr. Jeffrey<br>Baumes</h3>
-                <img class="jpl" title="Kitware Inc." src="static/img/kitware_logo_sm.png">
-                <p>Site PI (Principal Investigator)</p>
-            </div>
-            <div class="col-md-4 col-sm-12 team-item">
-                <img class="img-responsive" src="static/img/chris-mattmann.jpg" alt="Team 1" style="cursor: pointer; border-radius:30em;">
-                <h3>Dr. Chris A<br>Mattmann</h3>
-				<img class="jpl" title="NASA Jet Propulsion Laboratory" src="static/img/JPL_Logo_sm.png">
-                <p>PI (Principal Investigator)</p>
-            </div>
-            <div class="col-md-4 col-sm-12 team-item">
-                <img class="img-responsive" src="static/img/katrina_riehl.jpg" alt="Team 1" style="cursor: pointer; border-radius:30em;">
-                <h3>Dr. Katrina<br>Riehl</h3>
-                <img class="continuum" title="Continuum Analytics, Inc." src="static/img/continuum_logo_sm.png">
-                <p>Co-PI (Principal Investigator)</p>
-            </div>
-            <div class="col-md-4 col-sm-12 team-item">
-                <img class="img-responsive" src="static/img/paul_r.jpg" alt="Team 1" style="cursor: pointer; border-radius:30em;">
-                <h3>Paul<br>Ramirez</h3>
-                <img class="jpl" title="NASA Jet Propulsion Laboratory" src="static/img/JPL_Logo_sm.png">
-                <p>Co-I (Investigator)</p>
-            </div>
-            <div class="col-md-4 col-sm-12 team-item">
-                <img class="img-responsive" src="static/img/aron_ahmadia.jpg" alt="Team 1" style="cursor: pointer; border-radius:30em;">
-                <h3>Dr. Aron<br>Ahmadia</h3>
-                <img class="continuum" title="Continuum Analytics, Inc." src="static/img/continuum_logo_sm.png">
-                <p>Computational Scientist</p>
-            </div>
-            <div class="col-md-4 col-sm-12 team-item">
-                <img class="img-responsive" src="static/img/maziyar_boustani.jpg" alt="Team 1" style="cursor: pointer; border-radius:30em;">
-                <h3>Maziyar<br>Boustani</h3>
-                <img class="jpl" title="NASA Jet Propulsion Laboratory" src="static/img/JPL_Logo_sm.png">
-                <p>GIS+Web Developer</p>
-            </div>
-            <div class="col-md-4 col-sm-12 team-item">
-                <img class="img-responsive" src="static/img/wayne_burke.jpg" alt="Team 1" style="cursor: pointer; border-radius:30em;">
-                <h3>Wayne Moses<br>Burke</h3>
-                <img class="jpl" title="NASA Jet Propulsion Laboratory" src="static/img/JPL_Logo_sm.png">
-                <p>Data Scientist</p>
-            </div>
-            <div class="col-md-4 col-sm-12 team-item">
-                <img class="img-responsive" src="static/img/aashish_chaudhary.png" alt="Team 1" style="cursor: pointer; border-radius:30em;">
-                <h3>Aashish<br>Chaudhary</h3>
-                <img class="jpl" title="Kitware Inc." src="static/img/kitware_logo_sm.png">
-                <p>Technical Lead</p>
-            </div>
-            <div class="col-md-4 col-sm-12 team-item">
-                <img class="img-responsive" src="static/img/nipurn_doshi.jpg" alt="Nipurn Doshi" style="cursor: pointer; border-radius:30em;">
-                <h3>Nipurn<br>Doshi</h3>
-                <img class="jpl" title="NASA Jet Propulsion Laboratory" src="static/img/JPL_Logo_sm.png">
-                <p>UI/UX Intern</p>
-            </div>
-             <div class="col-md-4 col-sm-12 team-item">
-                <img class="img-responsive" src="static/img/brittain_hard.png" alt="Team 1" style="cursor: pointer; border-radius:30em;">
-                <h3>Brittain<br>Hard</h3>
-                <img class="continuum" title="Continuum Analytics, Inc." src="static/img/continuum_logo_sm.png">
-                <p>Software Developer</p>
-            </div>
-            <div class="col-md-4 col-sm-12 team-item">
-                <img class="img-responsive" src="static/img/mike_joyce.jpg" alt="Team 1" style="cursor: pointer; border-radius:30em;">
-                <h3>Michael J<br>Joyce</h3>
-                <img class="jpl" title="NASA Jet Propulsion Laboratory" src="static/img/JPL_Logo_sm.png">
-                <p>Backend Developer</p>
-            </div>
-            <div class="col-md-4 col-sm-12 team-item">
-                <img class="img-responsive" src="static/img/david_mertz.jpg" alt="David Mertz" style="cursor: pointer; border-radius:30em;">
-                <h3>Dr. David<br>Mertz</h3>
-                <img class="continuum" title="Continuum Analytics, Inc." src="static/img/continuum_logo_sm.png">
-                <p>Data Scientist</p>
-            </div>
-             <div class="col-md-4 col-sm-12 team-item">
-                <img class="img-responsive" src="static/img/asitang_mishra.jpg" alt="Asitang Mishra" style="cursor: pointer; border-radius:30em;">
-                <h3>Asitang<br>Mishra</h3>
-                <img class="jpl" title="NASA Jet Propulsion Laboratory" src="static/img/JPL_Logo_sm.png">
-                <p>Nutch Intern</p>
-            </div>
-             <div class="col-md-4 col-sm-12 team-item">
-                <img class="img-responsive" src="static/img/lewis_mc.jpg" alt="Team 1" style="cursor: pointer; border-radius:30em;">
-                <h3>Dr. Lewis J<br>Mcgibbney</h3>
-                <img class="jpl" title="NASA Jet Propulsion Laboratory" src="static/img/JPL_Logo_sm.png">
-                <p>Backend Developer</p>
-            </div>
-            <div class="col-md-4 col-sm-12 team-item">
-                <img class="img-responsive" src="static/img/sujen_shah.jpg" alt="Sujen Shah" style="cursor: pointer; border-radius:30em;">
-                <h3>Sujen<br>Shah</h3>
-                <img class="jpl" title="NASA Jet Propulsion Laboratory" src="static/img/JPL_Logo_sm.png">
-                <p>Nutch Intern</p>
-            </div>
-             <div class="col-md-4 col-sm-12 team-item">
-                <img class="img-responsive" src="static/img/harry_sun.png" alt="Team 1" style="cursor: pointer; border-radius:30em;">
-                <h3>Dr. Zhaohui<br>Harry Sun</h3>
-                <img class="jpl" title="Kitware Inc." src="static/img/kitware_logo_sm.png">
-                <p>Computer Vision R&D Engineer</p>
-            </div>
-            <div class="col-md-4 col-sm-12 team-item">
-                <img class="img-responsive" src="static/img/shivika_thapar.jpg" alt="Shivika Thapar" style="cursor: pointer; border-radius:30em;">
-                <h3>Shivika<br>Thapar</h3>
-                <img class="jpl" title="NASA Jet Propulsion Laboratory" src="static/img/JPL_Logo_sm.png">
-                <p>UI/UX Intern</p>
-            </div>
-             <div class="col-md-4 col-sm-12 team-item">
-                <img class="img-responsive" src="static/img/paul_tunison.png" alt="Team 1" style="cursor: pointer; border-radius:30em;">
-                <h3>Paul<br>Tunison</h3>
-                <img class="jpl" title="Kitware Inc." src="static/img/kitware_logo_sm.png">
-                <p>Computer Vision R&D Engineer</p>
-            </div>
-            <div class="col-md-4 col-sm-12 team-item">
-                <img class="img-responsive" src="static/img/matt_turek.png" alt="Team 1" style="cursor: pointer; border-radius:30em;">
-                <h3>Dr. Matthew<br>Turek</h3>
-                <img class="jpl" title="Kitware Inc." src="static/img/kitware_logo_sm.png">
-                <p>Assistant Director of Computer Vision</p>
-            </div>
-            <div class="col-md-4 col-sm-12 team-item">
-                <img class="img-responsive" src="static/img/kim_whitehall.jpg" alt="Dr. Kim Whitehall" style="cursor: pointer; border-radius:30em;">
-                <h3>Dr. Kim<br>Whitehall</h3>
-                <img class="jpl" title="NASA Jet Propulsion Laboratory" src="static/img/JPL_Logo_sm.png">
-                <p>Scientific Applications Software Engineer</p>
-            </div>
-            <div class="col-md-4 col-sm-12 team-item">
-                <img class="img-responsive" src="static/img/brian_wilson.jpg" alt="Brian Wilson" style="cursor: pointer; border-radius:30em;">
-                <h3>Brian<br>Wilson</h3>
-                <img class="jpl" title="NASA Jet Propulsion Laboratory" src="static/img/JPL_Logo_sm.png">
-                <p>Principal Engineer, Architect</p>
-            </div>
-            <div class="col-md-4 col-sm-12 team-item">
-                <img class="img-responsive" src="static/img/ben_zaitlen.png" alt="Team 1" style="cursor: pointer; border-radius:30em;">
-                <h3>Ben<br>Zaitlen</h3>
-                <img class="continuum" title="Continuum Analytics, Inc." src="static/img/continuum_logo_sm.png">
-                <p>Data Scientist</p>
-            </div>
-  	</div>
-        <div class="row">
-            <div class="col-md-12">
-                <h2>Partners</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 col-sm-12 team-item">
-                <a href="http://dig.isi.edu/"><img style="width:200px;" src="static/img/dig.png" alt="DIG" style="cursor: pointer; border-radius:30em;"></a>
-                <h3>Domain-specific Insight Graphs</h3>
-                <p>Information Sciences Institute<br>University of Southern California</p>
-            </div>
-	</div>
-    </section>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Us</h2>
-                <a href="mailto:memex-general@jpl.nasa.gov"><p>memex-general@jpl.nasa.gov</p></a>
-            </div>
-        </div>
-    </section>
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
 
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
 
-    <section id="credits" class="container content-credits text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <p3>Handcrafted by <a href="http://www.pankogut.com" target="_blank">PanKogut</a></p3>
-            </div>
-        </div>
-    </section>
-</div>
-
-    <!-- JavaScript -->
-    <script src="static/js/jquery-1.11.0.min.js"></script>
-    <script src="static/js/bootstrap.min.js"></script>
-    <script src="static/js/jquery.easing.min.js"></script>
-    <script src="static/js/custom.js"></script>
-
-    <!-- Google Analytics -->
-    <script></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
 
 </body>
 
