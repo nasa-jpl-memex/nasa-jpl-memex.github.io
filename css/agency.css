@@ -346,7 +346,7 @@ section {
 section h2.section-heading {
     margin-top: 0;
     margin-bottom: 25px;
-    font-size: 70px;
+    font-size: 42px;
 }
 
 section h3.section-subheading {
@@ -906,7 +906,7 @@ body {
 }
 
 .about-memex-content{
-    font-size:1.3em;
+    font-size:1.0em;
 }
 
 img.grayscale {
@@ -955,3 +955,8 @@ img.img-responsive {
     font-size: 20px;
     line-height:1.7em;
 }
+
+.collaborators{
+    padding: 10px;
+}
+
